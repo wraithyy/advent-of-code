@@ -2,6 +2,7 @@ import * as readline from "readline";
 import * as path from "path";
 import * as fs from "fs";
 import { runDay1 } from "./1";
+import { runDay2 } from "./2";
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -14,7 +15,7 @@ rl.question("Enter day number: ", (number: string) => {
       runDay1();
       break;
     case "2":
-      console.log("You entered two");
+      runDay2();
       break;
     default:
       console.log("You entered something else");
